@@ -1,0 +1,185 @@
+
+
+
+http://xmart.hol.es/showmarket
+{	
+	"status":"success",
+	"market":[
+				{
+					"id":"2",
+					"name":"Alfamaret Pangkalan Ojeg",
+					"phone":"sdasda",
+					"no":"23",
+					"street":"Pondok labu",
+					"rt":"2",
+					"rw":"99",
+					"longitude":"-6.315331",
+					"latitude":"106.795946"
+				},
+				{
+					"id":"1",
+					"name":"Indomaret Pondok Labu",
+					"phone":"087787626",
+					"no":"23",
+					"street":"Pangkalan jati",
+					"rt":"2",
+					"rw":"3",
+					"longitude":"-6.315879",
+					"latitude":"106.792990"
+				}
+			]
+}
+
+
+
+http://xmart.hol.es/checklogin?username=dhika&password=audi
+{
+	"status":"success",
+	"profile":[
+				{
+					"username":"dhika",
+					"password":"audi",
+					"user_id":"1",
+					"street":"Jl. Rs. Fatmawati, Pondok Labu, Daerah Khusus Ibukota ",
+					"no":"1",
+					"rt":"1",
+					"rw":"2",
+					"additional":"Jl. Rs. Fatmawati, Pondok Labu, Daerah Khusus Ibukota Jakarta, Indonesia",
+					"phone":"62 765 6971",
+					"longitude":"-6.315207",
+					"latitude":"106.793401"
+				}
+			]
+}
+
+
+
+Xmart.hol.es/showitemmarket?marketid=1
+{
+	"status":"success",
+	"item":[
+			{
+				"market_id":"1",
+				"market_item_id":"1",
+				"name":"Fisherman friends",
+				"weight":"1",
+				"barcode":"50819515",
+				"quantity":"84",
+				"price":"13000",
+				"type_id":"3",
+				"type_name":"Makanan Ringan"
+			},{
+				"market_id":"1",
+				"market_item_id":"2",
+				"name":"Hypermart Card",
+				"weight":"0",
+				"barcode":"8949172508",
+				"quantity":"44",
+				"price":"11000",
+				"type_id":"2",
+				"type_name":"Sabun"
+			},{
+				"market_id":"1",
+				"market_item_id":"6",
+				"name":"Sampoerna Mild 16",
+				"weight":"2",
+				"barcode":"8999909096004",
+				"quantity":"55",
+				"price":"17500",
+				"type_id":"1",
+				"type_name":"Rokok"
+			}
+		]
+}
+
+
+
+http://xmart.hol.es/showaddressuser?userid=1
+{
+	"status":"success",
+	"address":[
+				{
+					"user_id":"1",
+					"street":"Jl. Rs. Fatmawati, Pondok Labu, Daerah Khusus Ibukota ",
+					"no":"1",
+					"rt":"1",
+					"rw":"2",
+					"additional":"Jl. Rs. Fatmawati, Pondok Labu, Daerah Khusus Ibukota Jakarta, Indonesia",
+					"phone":"62 765 6971",
+					"longitude":"-6.315207",
+					"latitude":"106.793401"
+				},
+				{
+					"user_id":"1",
+					"street":"Jl Manggasari 5 nomor 3",
+					"no":"22",
+					"rt":"3",
+					"rw":"2",
+					"additional":"Deket wisma tani turun terus ke bawah",
+					"phone":"087878858892",
+					"longitude":"-6.293406",
+					"latitude":"106.824895"
+				}
+			]
+}
+
+ini sistem cartnya gimana mau di simpennya gmn??
+ini dia masukin alamat tujuannya gmn?
+buat webservice simpen transaksi
+
+
+
+
+xmart.hol.es/insertheadertransc?transid=22&marketid=1&userid=1
+{"status":"success"}
+
+xmart.hol.es/insertitemtransc?transid=22&itemid=1&count=1
+{"status":"success"}
+
+
+
+
+xmart.hol.es/getheaderbyuser?userid=1
+{
+	"status":"success",
+	"transaction":[
+					{
+						"id":"1",
+						"date":"2015-09-23 15:16:27",
+						"complete":"0000-00-00 00:00:00",
+						"status":"pending",
+						"street":"Jl. Rs. Fatmawati, Pondok Labu, Daerah Khusus Ibukota ",
+						"additional":"Jl. Rs. Fatmawati, Pondok Labu, Daerah Khusus Ibukota Jakarta, Indonesia",
+						"phone":"62 765 6971",
+						"longitude":"-6.315207",
+						"latitude":"106.793401",
+						"name":"dhika"
+					}
+				]
+}
+
+
+xmart.hol.es/getdetbytransc?transcid=1
+{
+	"status":"success",
+	"item":[
+				{
+					"id":"1",
+					"count":"2",
+					"market_price":"13000",
+					"name":"Fisherman friends"},
+				{
+					"id":"2",
+					"count":"3",
+					"market_price":"11000",
+					"name":"Hypermart Card"}
+			]
+}
+
+Xmart.hol.es/updatenotifyuser?transid=1111102015110540&userid=1
+{"status":"success"}
+
+
+
+
+
